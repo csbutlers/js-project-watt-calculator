@@ -2,13 +2,13 @@
 
 
 document.getElementById("btn-calc").addEventListener("click", calcWPKG);
-
+const inputKG = document.getElementById("inputkg");
+const inputWatts = document.getElementById("inputwatts");
 
 
 function calcWPKG() {
-    var inputKG = document.getElementById("inputkg").value;
-    var inputWatts = document.getElementById("inputwatts").value;
-    var WPKG = inputWatts / inputKG;
+    
+    const WPKG = inputWatts.value / inputKG.value;
     document.getElementById("outputCalc").value = WPKG;
 }
 

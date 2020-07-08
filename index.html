@@ -1,67 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
 
-        *, *:before, *:after {
-  box-sizing: border-box;
-}
+    <link rel="stylesheet" href="styles.css">
+    
 
-        #mainBox {
-          
-        background-color: rgba(187, 187, 187, .6); 
-        text-align: center;
-        font-size: 2rem;
         
-        padding: 2rem;    
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        }
-        .bg-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -20;
-    opacity: .15;
-    overflow: hidden;
-    
-        }
-
-    .bg-video__content {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        
-    
-    
-}
-
-label {
-    font-size: 1.4rem;
-}
-
-
-input[type=text] {
-  padding:10px;
-  border:0;
-  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
-  border-radius:5px;
-}
-
-#title {
-    text-align: center;
-}
-
-#outputCalc {
-    background-color: seashell;
-    width: 100%;
-}
            
-    </style>
+   
     
 </head>
 <body>
@@ -79,14 +25,14 @@ input[type=text] {
   <div id="mainBox">
         <h4 id="title">Cycling Power to Weight Ratio Calculator</h4>
         <label for="weight label">Weight (kg)</label>
-        <input type="text" id="inputkg" value="eg. 68"><br><br>
+        <input type="text" id="inputkg" placeholder="eg. 68"><br><br>
         <label for="watts label">Average Power</label>
-        <input type="text" id="inputwatts" value="eg. 350"><br><br>
+        <input type="text" id="inputwatts" placeholder="eg. 350"><br><br>
         
         <button id="btn-calc">Calculate</button>
    
     <p>Watts per Kilo</p>
-    <input type="text" id="outputCalc" value="What's your number?"><br><br>
+    <input type="text" id="outputCalc" placeholder="What's your number?"><br><br>
   
 </div>
 

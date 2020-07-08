@@ -1,0 +1,63 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "oswald", sans-serif;
+	padding: 2rem;
+	display: flex;
+	justify-content: center;
+	background-image: linear-gradient(to right bottom, rgba(111, 182, 213, 0.8), rgba(145, 174, 164, 0.8)), url("assets/Sawtooth.jpg");
+	background-size: cover;
+	background-position: top;
+}
+
+#mainBox {
+	background-color: rgba(187, 187, 187, .6);
+	text-align: center;
+	font-size: 2rem;
+	margin: 2rem;
+	padding: 2rem;
+	position: relative;
+	border-radius: 4px;
+	box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.09);
+}
+
+.bg-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -20;
+	opacity: .15;
+	overflow: hidden;
+}
+
+.bg-video__content {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+label {
+	font-size: 1.4rem;
+}
+
+input[type=text] {
+	padding: 10px;
+	border: 0;
+	box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+	border-radius: 5px;
+}
+
+#title {
+	text-align: center;
+}
+
+#outputCalc {
+	background-color: seashell;
+	width: 100%;
+}
