@@ -16,25 +16,25 @@
 
 
   <div id="mainBox">
-        <h4 id="title">Cycling Power to Weight Ratio Calculator</h4>
+        <h2 id="title">Cycling Power to Weight Ratio Calculator</h4>
         <label for="weight label">Weight (kg)</label>
         <input type="text" id="inputkg" placeholder="eg. 68"><br><br>
         <label for="watts label">Average Power</label>
         <input type="text" id="inputwatts" placeholder="eg. 350"><br><br>
         
-        <button id="btn-calc">Calculate</button>
+        <button type="button" class="btn-calc">Calculate</button>
    
-    <p>Watts per Kilo</p>
+    <label for="watts per kilo label">Watts Per Kilo</label>
+    
     <input type="text" id="outputCalc" placeholder="What's your number?"><br><br>
 
-    <div class="row printable" style="padding-top: 48px;">
-        <div class="col-xs-12 table-responsive">
+    
             <table class="table">
                 <thead class="thead-dark">
                     <tr>
-                        <th scope="col">Cycle Power Training Zones</th>
-                        <th scope="col">Feel</th>
-                        <th scope="col">Power Output (Watts)</th>
+                        <th scope="col">Training Zones</th>
+                        <th scope="col">RPE</th>
+                        <th scope="col">Watts</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -65,8 +65,7 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
-    </div>
+   
 
 <p id="testing"></p>
 
