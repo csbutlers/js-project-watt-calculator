@@ -11,8 +11,20 @@ var zone4 = document.getElementsByClassName("watts")[3];
 var zone5 = document.getElementsByClassName("watts")[4];
 
 
+
+
+function calError() {
+    if (inputKG.value.length == 0 || inputWatts.value.length == 0) {
+        
+        document.getElementById("outputCalc").value = "Add weight and ftp";
+    }     
+} 
+
+
+
+
 function calcWPKG() {
-    
+   
     const WPKG = inputWatts.value / inputKG.value;
     document.getElementById("outputCalc").value = WPKG;
     var z1low = Math.round((50 / 100) * inputWatts.value);
@@ -29,7 +41,7 @@ function calcWPKG() {
     zone3.innerHTML = z3low + ' - ' + z3high;
     zone4.innerHTML = z4low + ' - ' + z4high;
     zone5.innerHTML = z5low + ' - ' + z5high;
-
+    calError();
 }
 
 
