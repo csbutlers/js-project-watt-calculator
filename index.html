@@ -13,16 +13,7 @@
 <body>
 
 <div class="container">    
-<!--
-    <div class="bg-video">
-        <video class="bg-video__content" autoplay muted loop>
-            <source src="assets/video.mp4" type="video/mp4">
-            
-            your browser is not supported!
-        </video>
-    </div>
--->
-  
+
 
   <div id="mainBox">
         <h4 id="title">Cycling Power to Weight Ratio Calculator</h4>
@@ -35,8 +26,61 @@
    
     <p>Watts per Kilo</p>
     <input type="text" id="outputCalc" placeholder="What's your number?"><br><br>
-  
+
+    <div class="row printable" style="padding-top: 48px;">
+        <div class="col-xs-12 table-responsive">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Cycle Power Training Zones</th>
+                        <th scope="col">Feel</th>
+                        <th scope="col">Power Output (Watts)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="CPZ-zone-1">
+                        <th scope="row">1</th>
+                        <td>Easy</td>
+                        <td class="watts"></td>
+                    </tr>
+                    <tr id="CPZ-zone-2">
+                        <th scope="row">2</th>
+                        <td>Steady</td>
+                        <td class="watts"></td>
+                    </tr>
+                    <tr id="CPZ-zone-3">
+                        <th scope="row">3</th>
+                        <td>Moderately Hard</td>
+                        <td class="watts"></td>
+                    </tr>
+                    <tr id="CPZ-zone-4">
+                        <th scope="row">4</th>
+                        <td>Hard</td>
+                        <td class="watts"></td>
+                    </tr>
+                    <tr id="CPZ-zone-5">
+                        <th scope="row">5</th>
+                        <td>Very Hard</td>
+                        <td class="watts"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+<p id="testing"></p>
+
+
+
+
+
 </div>
+
+
+
+
+
+
 
 
 </div>
