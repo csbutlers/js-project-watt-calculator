@@ -4,23 +4,31 @@
 	box-sizing: border-box;
 }
 
-body {
-	font-family: "oswald", sans-serif;
-    background-color: white;
-    font-size: 16px;
+
+html {
+	justify-content: center;
+	background-image: linear-gradient(to right bottom, rgba(80, 146, 174, 0.8), rgba(145, 174, 164, 0.8)), url("assets/Sawtooth.jpg");
+	background-size: cover;
+	 background-position: center center;
+    min-width: 100%;
+	min-height: 100%;
+	width: 100%;
+	height: auto;
+    margin: 0 auto;
+	
+	background-attachment: fixed;
 }
 
+body {
+	font-family: "oswald", sans-serif;
+    background-color: transparent;
+	font-size: 16px;
+	
+}
 
-.container {
-   justify-content: center;
-	background-image: linear-gradient(to right bottom, rgba(111, 182, 213, 0.8), rgba(145, 174, 164, 0.8)), url("assets/Sawtooth.jpg");
-    background-size: cover;
-    width: 100%;
-    
-    margin: 0 auto;
-    background-position: top;
-  position: relative;
-  overflow: hidden;
+p, li, small {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
 }
 
 #mainBox h2 {
@@ -29,39 +37,51 @@ body {
 
 #mainBox {
 	background-color: rgba(187, 187, 187, .6);
-	text-align: center;
-    
-    width: 70%;
-	margin: 2rem auto;
+	margin: 0 auto;
+    width: 90%;
+	
 	padding: 2rem;
-	position: relative;
+	
 	border-radius: 4px;
 	box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.09);
 }
 
-.bg-video {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	z-index: -20;
-	opacity: .15;
-	overflow: hidden;
-}
-
-.bg-video__content {
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
-}
 
 label {
 	font-size: 1.4rem;
+	margin-top: 10px;
+}
+
+input {
+	margin-right: 1rem;
+    padding: 1rem;
+	
+	
+	
+}
+
+
+/*
+
+ style for mobile
+input {
+	margin: 1rem auto;
+	display: block;
+	width: 100%;
+	
+	
+}
+
+*/
+
+#inputkg {
+	margin-bottom: .25rem;
 }
 
 input[type=text] {
-	padding: 10px;
+    display: inline-block;
+	
+	padding: .5rem;
 	border: 0;
 	box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
 	border-radius: 5px;
@@ -71,15 +91,32 @@ input[type=text] {
 	text-align: center;
 }
 
+
+.calcHolder {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
 button {
 
     display: block;
     margin: 1rem auto 2.5rem auto;
-    padding: .25rem 1rem;
+    padding: .5rem 1rem;
     border-radius: 3px;
     border: none;
     cursor: pointer;
 	
+}
+
+button:hover {
+	background-color:  rgba(80, 146, 174, 0.8);
+	color: #fff;
+}
+
+button:focus {
+	outline: none;
 }
 
 
@@ -94,10 +131,38 @@ table thead.thead-dark tr {
 
 
 .thead-dark{
-    background-color: rgba(111, 182, 213, 0.8)!important;
+    background-color: rgba(80, 146, 174, 0.8)!important;
     color: white;
     
 }
 
 tr:nth-child(2n+2) {background: #CCC; }
 
+
+
+.footer {
+	width: 400px;
+    padding: 0rem;
+    margin:2rem auto;
+	color: #fff;
+	text-align: center;
+}
+
+.footer-text {
+	padding: 0;
+	margin: 0 auto;
+	text-align: center;
+	font-size: .75rem;
+	width: 100%;
+	
+}
+
+.footer-text a:link, .footer-text a:active, .footer-text a:visited  {
+	color: #fff;
+    
+
+}
+
+.footer-text a:hover {
+	color: #fff;
+}

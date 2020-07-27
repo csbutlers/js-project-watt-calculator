@@ -1,24 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="utf-8" />
+    <title>Watts Per Kilogram and FTP Zone Calculator</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
+<main>    
+
+<section class="calculator">
 
 <div class="container">    
 
 
   <div id="mainBox">
-        <h2 id="title">Cycling Power Zones Calculator</h4>
-        <label for="weight label">Weight (kg)</label>
-        <input type="text" id="inputkg" placeholder="eg. 68"><br><br>
-        <label for="watts label">Average Power</label>
+    <h2 id="title">Cycling Power Zones Calculator</h2>
+
+
+<p>So you’ve bought a power meter, now what? If you’ve made the investment in a power meter and you want to train
+correctly, you need to know what your Functional Threshold Power is. Knowing your FTP will allow you to set your power
+training zones.</p>
+<p>
+Here are the first steps to getting started with training with power.
+</p>
+
+<ol>
+<li>Establish your FTP: The best and most common way of doing this is to perform a 20-minute test. Make sure the course is
+an uninterrupted road without stop signs or traffic lights. Some people prefer to perform this test uphill. If you
+choose to use a hill, make sure the gradient is consistent.
+</li>
+
+<li>
+Take the average power during your 20-minute test minus .05. (Example a 300 average watt effort would translate to 285
+FTP.)
+</li>
+
+<li>
+Use the calculator below to find your training zones and watts per kilogram. Chris Froome, four-time Tour de France
+champion has power levels equal to 6.25 watts per kilogram. Don’t worry, unless you’re racing Froome, you won’t have
+anything close to that.
+</li>
+</ol>
+
+<div class="calcHolder">
+        <label for="inputkg">Weight (kg)</label>
+        <input type="text" id="inputkg" placeholder="eg. 68">
+        <label for="inputwatts">Average Power</label>
         <input type="text" id="inputwatts" placeholder="eg. 350"><br><br>
         
         <button type="button" id="btn-calc">Calculate</button>
    
-    <label for="watts label">Watts per Kilo</label>
+    <label for="outputCalc">Watts per Kilo</label>
     
     <input type="text" id="outputCalc" placeholder="What's your number?"><br><br>
 
@@ -59,25 +96,19 @@
                     </tr>
                 </tbody>
             </table>
-   
-
-<p id="testing"></p>
-
-
-
-
-
+        </div>    
 </div>
-
-
-
-
-
-
-
-
 </div>
+</section>
 
+</main>
+<footer class="footer">
+        <small class="footer-text">© 2020 Chris Butler | <a
+                href="https://www.chrisbutlerdigital.com">chrisbutlerdigital.com</a></small>
+
+</footer>
+<script  src="js/app.js"></script>
 </body>
-<script src="js/app.js"></script>
+
+
 </html>
